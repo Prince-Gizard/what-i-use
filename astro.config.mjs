@@ -1,12 +1,12 @@
-import { defineConfig } from 'astro/config';
-import sitemap from '@astrojs/sitemap';
-import react from '@astrojs/react';
-import image from '@astrojs/image';
+import { defineConfig } from 'astro/config'
+import sitemap from '@astrojs/sitemap'
+import react from '@astrojs/react'
+import image from '@astrojs/image'
 
-import tailwind from "@astrojs/tailwind";
+import tailwind from '@astrojs/tailwind'
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://example.com',
+  site: 'https://uses.vasilii-buraev.vercel.app/',
   integrations: [sitemap(), react(), image(), tailwind()]
-});
+})
