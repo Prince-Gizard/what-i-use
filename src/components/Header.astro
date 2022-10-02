@@ -3,6 +3,7 @@ import HeaderLink from './HeaderLink.astro'
 import { HOMEPAGE_URL } from '../config'
 import { IoLogoGithub } from 'react-icons/io5/index.js'
 import PigprintIcon from './icons/pigprint.tsx'
+import ThemeToggle from './ThemeToggleButton.jsx'
 const allPosts = await Astro.glob('../pages/posts/*.md')
 const allTags = new Set<string>()
 allPosts.map(post => {
@@ -28,6 +29,7 @@ allPosts.map(post => {
         >
       </div>
       <div class="flex-1"></div>
+      <ThemeToggle client:visible />
     </nav>
   </div>
 </header>
