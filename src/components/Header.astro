@@ -2,6 +2,7 @@
 import HeaderLink from './HeaderLink.astro'
 import { HOMEPAGE_URL } from '../config'
 import { IoLogoGithub } from 'react-icons/io5/index.js'
+import PigprintIcon from './icons/pigprint.tsx'
 const allPosts = await Astro.glob('../pages/posts/*.md')
 const allTags = new Set<string>()
 allPosts.map(post => {
@@ -15,6 +16,7 @@ allPosts.map(post => {
     <nav class="flex items-center gap-3 text-base">
       <a href="/" class="group">
         <h2 class="font-semibold tracking-tighter p-2 font-mplus text-lg">
+          <PigprintIcon />
           Vasilii Buraev
         </h2>
       </a>
